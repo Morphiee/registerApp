@@ -1,0 +1,8 @@
+<h1>Please log in</h1>
+
+<%= flash[:notice] %>
+<form action="/home" method="post">
+    <input type="text" name="user_log" placeholder="Username" required>
+    <input type="password" name="pass_log" placeholder="Password" required>
+    <input type="submit" value="Login">
+</form>
